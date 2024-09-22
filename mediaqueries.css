@@ -1,6 +1,6 @@
 @media screen and (max-width: 1400px) {
   #profile {
-    height: 83vh;
+    height: auto;
     margin-bottom: 6rem;
   }
   .about-containers {
@@ -8,7 +8,7 @@
   }
   #contact,
   #projects {
-    height: fit-content;
+    height: auto;
   }
 }
 
@@ -32,7 +32,7 @@
   }
   section,
   .section-container {
-    height: fit-content;
+    height: auto;
   }
   section {
     margin: 0 5%;
@@ -50,17 +50,18 @@
 @media screen and (max-width: 600px) {
   #contact,
   footer {
-    height: 40vh;
+    height: auto;
+    min-height: 40vh;
   }
   #profile {
-    height: 83vh;
+    height: auto;
     margin-bottom: 0;
   }
   article {
     font-size: 1rem;
   }
   footer nav {
-    height: fit-content;
+    height: auto;
     margin-bottom: 2rem;
   }
   .about-containers,
@@ -88,7 +89,9 @@
   }
   .section__pic-container {
     width: auto;
-    height: 46vw;
+    height: auto;
+    max-width: 100%;
+    max-height: 46vw;
     justify-content: center;
   }
   .section__text__p2 {
