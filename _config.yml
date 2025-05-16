@@ -25,7 +25,7 @@ author:
   avatar           : "20250131_164717.png"
   name             : "Aszadur Rahman Rakin"
   pronouns         : "he/him"  
-  bio              : "PhD Stduent at BU ECE"
+  bio              : "Machine Learning Engineer, RIC, BUET"
   location         : "Dhaka, Bangladesh"
   employer         : "Bangladesh University of Engineering and Technology"
   uri              : # URL
@@ -273,7 +273,7 @@ defaults:
     values:
       layout: single
       author_profile: true
-      share: true
+      share: false
       comment: true
   # _talks
   - scope:
