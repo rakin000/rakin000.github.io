@@ -11,7 +11,7 @@ redirect_from:
 
 # About Me
 
-I am a first-year PhD student in Computer Engineering at Boston University, where I am advised by [Yigong Hu](https://yigonghu.github.io/). I work broadly on systems reliability. My current research project explores techniques for detecting and diagnosing issues to improve the reliability and observability of large-scale software systems. Prior to my PhD, I conducted research at the Bangladesh University of Engineering and Technology (BUET), where I worked on automatic software testing systems.
+I am a first-year PhD student in Computer Engineering at Boston University, where I am fortunately advised by Professor [Yigong Hu](https://yigonghu.github.io/). I work broadly on systems reliability. My current research project explores techniques for detecting and diagnosing issues to improve the reliability and observability of large-scale software systems. Prior to my PhD, I conducted research at the Bangladesh University of Engineering and Technology (BUET), where I worked on automatic software testing systems.
 
 
 <!-- Research Interests
@@ -31,9 +31,6 @@ Compiler and Systems Optimization
 I am particularly interested in building tools and techniques that help developers understand, analyze, and improve the reliability of large-scale software systems. -->
 
 ## Vision
-
-Modern society increasingly depends on complex software systems that power critical infrastructure, communication, and knowledge exchange. As these systems grow in scale and complexity, ensuring their reliability, transparency, and robustness becomes increasingly important.
-
 My long-term goal is to develop systems and tools that help engineers better understand and reason about software behavior, enabling the creation of more reliable computing infrastructure. 
 
  <!-- By improving the ways we analyze and test large software systems, I hope to contribute to building computing systems that society can depend on with greater confidence. -->
