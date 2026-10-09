@@ -9,9 +9,9 @@
 # Basic Site Settings
 locale                   : "en-US"
 site_theme               : "default"
-title                    : "Aszadurrahman Rakin "
+title                    : "Aszadurrahman (Aszad) Rakin"
 title_separator          : "-"
-name                     : &name "Aszadurrahman Rakin"
+name                     : &name "Aszadurrahman (Aszad) Rakin"
 description              : &description "personal description"
 url                      : https://rakin000.github.io # the base hostname & protocol for your site e.g. "https://[your GitHub username].github.io" or if you already have some other page hosted on Github then use "https://[your GitHub username].github.io/[Your Repo Name]"
 baseurl                  : "/" # the subpath of your site, e.g. "/blog"
@@ -23,13 +23,13 @@ repository               : # "/academicpages.github.io"
 author:
   # Biographic information
   avatar           : "IMG_0940.PNG"
-  name             : "Aszadurrahman Rakin"
+  name             : "Aszad Rakin"
   pronouns         : "he/him"  
-  bio              : "1st year PhD student, ECE Dept, Boston University" #"Machine Learning Engineer, RIC, BUET"
+  bio              : "2nd year PhD student, ECE Dept, Boston University" #"Machine Learning Engineer, RIC, BUET"
   location         : "Boston, USA" #"Dhaka, Bangladesh"
   employer         : "Boston University" #"Bangladesh University of Engineering and Technology"
   uri              : # URL
-  email            : "rakinkzs@gmail.com" 
+  email            : "rakin@bu.com" 
 
   # Academic websites
   academia         : # URL
@@ -60,7 +60,7 @@ author:
   keybase          : # Username
   instagram        : # Username
   lastfm           : # Username
-  linkedin         : # Username
+  linkedin         : "rakin000" # Username
   mastodon         : # URL
   medium           : # URL
   pinterest        : # Username

@@ -1,6 +1,6 @@
 ---
 permalink: /
-title: # "Hi, I'm Rakin"
+title: # "Hi, I'm Aszad"
 author_profile: true
 redirect_from: 
   - /about/
@@ -30,11 +30,11 @@ Compiler and Systems Optimization
 
 I am particularly interested in building tools and techniques that help developers understand, analyze, and improve the reliability of large-scale software systems. -->
 
-## Vision
+<!-- ## Vision
 My long-term goal is to develop systems and tools that help engineers better understand and reason about software behavior, enabling the creation of more reliable computing infrastructure. 
 
  <!-- By improving the ways we analyze and test large software systems, I hope to contribute to building computing systems that society can depend on with greater confidence. -->
-
+ -->
 
 ## Let’s Chat
 
