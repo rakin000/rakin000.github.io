@@ -1,0 +1,393 @@
+/* ==========================================================================
+   PORTFOLIO POLISH
+   Personal styling layered on top of the academicpages defaults.
+   ========================================================================== */
+
+$portfolio-sans  : "Nunito", -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+
+/* Palette -------------------------------------------------------------- */
+
+:root {
+  --pf-accent         : #1d6b84;
+  --pf-accent-soft    : #e8f2f5;
+  --pf-text           : #24292f;
+  --pf-muted          : #5f6b76;
+  --pf-surface        : #f6f8fa;
+  --pf-border         : #e3e8ed;
+  --pf-shadow         : 0 1px 2px rgba(16, 24, 40, 0.04), 0 4px 16px rgba(16, 24, 40, 0.06);
+
+  --global-base-color          : var(--pf-accent);
+  --global-bg-color            : #fff;
+  --global-footer-bg-color     : var(--pf-surface);
+  --global-border-color        : var(--pf-border);
+  --global-text-color          : var(--pf-text);
+  --global-text-color-light    : var(--pf-muted);
+  --global-link-color          : var(--pf-accent);
+  --global-link-color-hover    : #134c5e;
+  --global-link-color-visited  : var(--pf-accent);
+  --global-masthead-link-color : var(--pf-muted);
+  --global-masthead-link-color-hover : var(--pf-text);
+}
+
+html[data-theme="dark"] {
+  --pf-accent         : #6cc7e04b;
+  --pf-accent-soft    : rgba(108, 198, 224, 0.12);
+  --pf-text           : #e6e9ec;
+  --pf-muted          : #9aa5b1;
+  --pf-surface        : #171b21;
+  --pf-border         : #29303a;
+  --pf-shadow         : 0 1px 2px rgba(0, 0, 0, 0.3), 0 4px 16px rgba(0, 0, 0, 0.25);
+
+  --global-bg-color            : #0f1216;
+  --global-footer-bg-color     : var(--pf-surface);
+  --global-dark-border-color   : var(--pf-border);
+  --global-link-color-hover    : #9bdcee46;
+  --global-masthead-link-color-hover : var(--pf-text);
+  --global-text-color-light    : var(--pf-muted);
+}
+
+/* Base typography ------------------------------------------------------ */
+
+body {
+  font-family: $portfolio-sans;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: $portfolio-sans;
+  color: var(--pf-text);
+  letter-spacing: -0.01em;
+}
+
+/* Masthead ------------------------------------------------------------- */
+
+.masthead {
+  background: color-mix(in srgb, var(--global-bg-color) 85%, transparent);
+  -webkit-backdrop-filter: saturate(180%) blur(10px);
+          backdrop-filter: saturate(180%) blur(10px);
+}
+
+.masthead__menu-item {
+  background-color: transparent;
+}
+
+.greedy-nav {
+  background: transparent;
+
+  .visible-links a {
+    font-size: 0.95em;
+    font-weight: 500;
+    transition: color 0.2s ease;
+
+    &::before {
+      height: 2px;
+      background: var(--pf-accent);
+      border-radius: 2px;
+    }
+  }
+
+  .hidden-links {
+    background: var(--global-bg-color);
+    border-color: var(--pf-border);
+    border-radius: 10px;
+    box-shadow: var(--pf-shadow);
+  }
+}
+
+.masthead__menu-item--lg a {
+  font-family: $portfolio-sans;
+  font-size: 1.1em !important;
+  font-weight: 600 !important;
+  color: var(--pf-text) !important;
+}
+
+.masthead__menu-item.selected a,
+.masthead__menu-item.selected a:hover {
+  border-bottom: 0;
+}
+
+/* Sidebar / author card ------------------------------------------------ */
+
+.author__avatar img {
+  padding: 0;
+  border: 0;
+  box-shadow: 0 0 0 4px var(--global-bg-color), 0 0 0 5px var(--pf-border), var(--pf-shadow);
+  transition: transform 0.3s ease;
+
+  &:hover {
+    transform: scale(1.02);
+  }
+}
+
+.sidebar .author__name {
+  font-family: $portfolio-sans;
+  font-size: 1.3em;
+  font-weight: 600;
+  color: var(--pf-text);
+}
+
+.author__pronouns {
+  color: var(--pf-muted);
+}
+
+.author__bio {
+  color: var(--pf-muted);
+}
+
+.author__urls {
+  li {
+    color: var(--pf-muted);
+  }
+
+  a {
+    color: var(--pf-muted) !important;
+    border-radius: 6px;
+    transition: color 0.2s ease;
+
+    &:hover {
+      color: var(--pf-accent) !important;
+      text-decoration: none;
+    }
+  }
+
+  // Uniform icon colour instead of the per-brand colours
+  i,
+  .fab,
+  .fas,
+  .ai {
+    color: inherit !important;
+  }
+}
+
+/* Page content --------------------------------------------------------- */
+
+.page__title {
+  font-size: 2.1em;
+  font-weight: 700;
+  margin-bottom: 0.4em;
+}
+
+.page__content {
+  font-size: 1.02em;
+  line-height: 1.7;
+
+  > h1:first-child {
+    font-size: 2.1em;
+    font-weight: 700;
+    margin-bottom: 0.6em;
+  }
+
+  h2 {
+    position: relative;
+    margin-top: 2.2em;
+    padding-bottom: 0.4em;
+    font-size: 1.45em;
+    font-weight: 600;
+    border-bottom: 1px solid var(--pf-border);
+
+    &::after {
+      content: "";
+      position: absolute;
+      left: 0;
+      bottom: -1px;
+      width: 2.5em;
+      height: 2px;
+      background: var(--pf-accent);
+      border-radius: 2px;
+    }
+  }
+
+  a {
+    color: var(--pf-accent);
+    text-decoration: underline;
+    text-decoration-thickness: 1px;
+    text-underline-offset: 3px;
+    text-decoration-color: color-mix(in srgb, var(--pf-accent) 40%, transparent);
+    transition: text-decoration-color 0.2s ease;
+
+    &:hover {
+      text-decoration-color: currentColor;
+    }
+  }
+}
+
+/* Timeline (education, experience) ------------------------------------- */
+
+.timeline {
+  position: relative;
+  margin: 1.25em 0 0;
+  padding: 0 0 0 1.5em;
+  list-style: none;
+
+  // Vertical rail
+  &::before {
+    content: "";
+    position: absolute;
+    top: 0.6em;
+    bottom: 0.6em;
+    left: 0.35em;
+    width: 2px;
+    background: var(--pf-border);
+    border-radius: 2px;
+  }
+}
+
+.timeline__item {
+  position: relative;
+  margin: 0 0 1em;
+  padding: 0.9em 1.1em;
+  background: var(--pf-surface);
+  border: 1px solid var(--pf-border);
+  border-radius: 12px;
+  transition: border-color 0.2s ease, box-shadow 0.2s ease, transform 0.2s ease;
+
+  // Dot on the rail
+  &::before {
+    content: "";
+    position: absolute;
+    top: 1.25em;
+    left: calc(-1.15em - 6px);
+    width: 12px;
+    height: 12px;
+    background: var(--global-bg-color);
+    border: 2px solid var(--pf-accent);
+    border-radius: 50%;
+  }
+
+  &:hover {
+    border-color: color-mix(in srgb, var(--pf-accent) 45%, var(--pf-border));
+    box-shadow: var(--pf-shadow);
+    transform: translateY(-1px);
+  }
+}
+
+.timeline__head {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: 0.25em 1em;
+}
+
+.page__content .timeline__title {
+  margin: 0;
+  font-family: $portfolio-sans;
+  font-size: 1em;
+  font-weight: 600;
+  line-height: 1.4;
+}
+
+.timeline__date {
+  flex-shrink: 0;
+  padding: 0.1em 0.65em;
+  font-size: 0.78em;
+  font-weight: 500;
+  color: var(--pf-accent);
+  background: var(--pf-accent-soft);
+  border-radius: 999px;
+  white-space: nowrap;
+}
+
+.page__content .timeline__sub,
+.page__content .timeline__desc {
+  margin: 0.3em 0 0;
+  font-size: 0.9em;
+  line-height: 1.55;
+}
+
+.timeline__sub {
+  color: var(--pf-muted);
+}
+
+.timeline__dot {
+  margin: 0 0.45em;
+}
+
+/* Contact call-out ----------------------------------------------------- */
+
+.contact-card {
+  margin-top: 1em;
+  padding: 1.25em 1.4em;
+  background: color-mix(in srgb, var(--pf-accent) 2.5%, transparent);
+  border-radius: 14px;
+
+  p {
+    margin: 0 0 0.75em;
+  }
+}
+
+.contact-card__actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.5em;
+}
+
+// Plain text links with an icon
+.page__content .contact-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.45em;
+  font-size: 0.95em;
+  color: var(--pf-text);
+  text-decoration: none;
+
+  i {
+    color: var(--pf-muted);
+  }
+
+  &:hover {
+    text-decoration: underline;
+    text-decoration-color: var(--pf-muted);
+  }
+}
+
+/* Footer --------------------------------------------------------------- */
+
+// The template pins the footer to the viewport, which covers long pages.
+body {
+  padding-bottom: 0;
+}
+
+// Keep the footer below the fixed sidebar on short pages
+@media screen and (min-width: $sidebar-screen-min-width) {
+  #main {
+    min-height: calc(100vh - #{$masthead-height});
+  }
+}
+
+.page__footer {
+  position: relative;
+  bottom: auto;
+  margin-top: 4em;
+  border-top: 1px solid var(--pf-border);
+  color: var(--pf-muted);
+
+  a {
+    color: var(--pf-muted);
+
+    &:hover {
+      color: var(--pf-accent);
+    }
+  }
+}
+
+.page__footer-copyright {
+  color: var(--pf-muted);
+  opacity: 0.85;
+}
+
+.page__footer-follow .social-icons a {
+  color: var(--pf-muted);
+}
+
+/* Motion preference ---------------------------------------------------- */
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    transition: none !important;
+    animation: none !important;
+  }
+}

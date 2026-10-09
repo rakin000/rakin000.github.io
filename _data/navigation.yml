@@ -24,10 +24,10 @@ main:
   #   url: /year-archive/
   
   - title: "Education"
-    url: /#education 
+    url: /education/
 
   - title: "Work Experience"
-    url: /#work-experience
+    url: /work-experience/
     
       
   - title: "CV"

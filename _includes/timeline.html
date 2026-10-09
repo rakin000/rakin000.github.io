@@ -1,0 +1,17 @@
+{% comment %}Usage: include timeline.html items=site.data.education{% endcomment %}
+<ol class="timeline">
+  {% for item in include.items %}
+  <li class="timeline__item">
+    <div class="timeline__head">
+      <h3 class="timeline__title">{{ item.title }}</h3>
+      {% if item.date %}<span class="timeline__date">{{ item.date }}</span>{% endif %}
+    </div>
+    {% if item.subtitle or item.location %}
+    <p class="timeline__sub">
+      {{ item.subtitle }}{% if item.subtitle and item.location %}<span class="timeline__dot" aria-hidden="true">·</span>{% endif %}{{ item.location }}
+    </p>
+    {% endif %}
+    {% if item.description %}<p class="timeline__desc">{{ item.description }}</p>{% endif %}
+  </li>
+  {% endfor %}
+</ol>

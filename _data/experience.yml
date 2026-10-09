@@ -1,0 +1,11 @@
+# Rendered on /work-experience/ by _includes/timeline.html
+- title: "Bangladesh University of Engineering and Technology (BUET)"
+  subtitle: "Machine Learning Engineer"
+  location: "Dhaka, Bangladesh"
+  date: "Feb 2025 – Aug 2025"
+
+- title: "Samsung Research Bangladesh & BUET"
+  subtitle: "Research Engineer"
+  location: "Dhaka, Bangladesh"
+  date: "Jul 2024 – Aug 2025"
+  description: "Automated Android software testing."
